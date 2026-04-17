@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log/slog"
 
-	"github.com/arsmorientem/providertron/capability"
+	"github.com/Ars-Ludus/providertron/capability"
 )
 
 type batchRequestItem struct {

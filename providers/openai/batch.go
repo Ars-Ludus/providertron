@@ -6,7 +6,7 @@ import (
 	"log/slog"
 	"sync"
 
-	"github.com/arsmorientem/providertron/capability"
+	"github.com/Ars-Ludus/providertron/capability"
 )
 
 func (o *OpenAI) Batch(ctx context.Context, req capability.BatchRequest) (capability.BatchResponse, error) {

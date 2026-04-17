@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/arsmorientem/providertron/capability"
+	"github.com/Ars-Ludus/providertron/capability"
 )
 
 func (a *Anthropic) Embed(_ context.Context, _ capability.EmbedRequest) (capability.EmbedResponse, error) {

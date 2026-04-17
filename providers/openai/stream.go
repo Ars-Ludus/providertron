@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/arsmorientem/providertron/capability"
+	"github.com/Ars-Ludus/providertron/capability"
 )
 
 type streamChunkResponse struct {

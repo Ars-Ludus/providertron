@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/arsmorientem/providertron/capability"
+	"github.com/Ars-Ludus/providertron/capability"
 )
 
 func (g *Gemini) Stream(ctx context.Context, req capability.StreamRequest) (<-chan capability.StreamChunk, error) {
