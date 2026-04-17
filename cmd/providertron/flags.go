@@ -33,24 +33,19 @@ func parseFlags() *CLIConfig {
 	flag.StringVar(&cfg.APIKey, "api-key", "", "Provider API key (required)")
 	flag.StringVar(&cfg.Model, "model", "", "Model name (uses provider default if omitted)")
 	flag.StringVar(&cfg.BaseURL, "base-url", "", "Override provider base URL")
-
 	flag.Float64Var(&cfg.Temperature, "temperature", 0, "Sampling temperature (0 = provider default)")
 	flag.IntVar(&cfg.MaxTokens, "max-tokens", 0, "Max output tokens (0 = provider default)")
 	flag.IntVar(&cfg.TopK, "top-k", 0, "Top-K sampling (0 = provider default)")
 	flag.Float64Var(&cfg.TopP, "top-p", 0, "Top-P nucleus sampling (0 = provider default)")
-
 	flag.StringVar(&cfg.Command, "command", "", "Command: generate|stream|embed|batch|voice|discover|dispatch (required)")
 	flag.StringVar(&cfg.Prompt, "prompt", "", "Inline text input")
 	flag.StringVar(&cfg.InputFile, "input", "", "Path to JSON request file (overrides -prompt)")
 	flag.StringVar(&cfg.VoiceDir, "voice-dir", "tts", "Voice direction: tts|stt")
 	flag.StringVar(&cfg.AudioFile, "audio-file", "", "Path to audio file for STT input")
-
 	flag.BoolVar(&cfg.OutputJSON, "output-json", false, "Print raw JSON response")
 	flag.StringVar(&cfg.AudioOut, "audio-out", "", "Path to write TTS audio output (default: stdout bytes)")
-
 	flag.StringVar(&cfg.ModelsPath, "models-path", "models.json", "Path to models cache file")
 	flag.StringVar(&cfg.LogLevel, "log-level", "info", "Log level: debug|info|warn|error")
-
 	flag.Usage = func() {
 		fmt.Fprintf(os.Stderr, "Usage: providertron -provider <name> -api-key <key> -command <cmd> [options]\n\n")
 		fmt.Fprintf(os.Stderr, "Commands:\n")

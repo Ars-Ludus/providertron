@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/arsmorientem/providertron/capability"
-	"github.com/arsmorientem/providertron/models"
-	"github.com/arsmorientem/providertron/provider"
+	"github.com/Ars-Ludus/providertron/capability"
+	"github.com/Ars-Ludus/providertron/models"
+	"github.com/Ars-Ludus/providertron/provider"
 )
 
 func runGenerate(ctx context.Context, p *provider.Provider, cfg *CLIConfig) error {

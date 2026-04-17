@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/arsmorientem/providertron/provider"
-	"github.com/arsmorientem/providertron/providers/anthropic"
-	"github.com/arsmorientem/providertron/providers/gemini"
-	"github.com/arsmorientem/providertron/providers/openai"
+	"github.com/Ars-Ludus/providertron/provider"
+	"github.com/Ars-Ludus/providertron/providers/anthropic"
+	"github.com/Ars-Ludus/providertron/providers/gemini"
+	"github.com/Ars-Ludus/providertron/providers/openai"
 )
 
 func buildProvider(cfg *CLIConfig) (*provider.Provider, error) {

@@ -7,7 +7,7 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/arsmorientem/providertron/models"
+	"github.com/Ars-Ludus/providertron/models"
 )
 
 func main() {
